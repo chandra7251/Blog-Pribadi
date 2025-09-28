@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Basis Data - Home">
+  <title>Home</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <button class="burger" id="burgerMenu" aria-label="Menu">☰</button>
+    <div class="logo">Blog Pribadi</div>
+    <nav> 
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="post1.html">Post 1</a></li>
+        <li><a href="post2.html">Post 2</a></li>
+        <li><a href="post3.html">Post 3</a></li>
+        <li><a href="post4.html">Post 4</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-theme" id="toggleTheme">🌙</button>
+  </header>
+
+
+
+  <!-- MINI PROFILE SECTION -->
+  <section class="mini-profile">
+    <img src="img/profile.jpg" alt="Foto Profil" class="mini-photo">
+    <div class="mini-info">
+      <h2>Chandra Aditiya Putra</h2>
+      <p>Mahasiswa Informatika UBP Karawang</p>
+      <a href="profile.html" class="btn-primary">Lihat Profil</a>
+    </div>
+  </section>
+
+  <!-- POST SECTION -->
+  <section class="posts">
+    <h2>Artikel / Post</h2>
+    <div class="post-grid">
+      <article class="post-card">
+        <img src="img/rak buku.jpg" alt="Post 1">
+        <div class="post-content">
+          <h3><a href="post1.html">Post 1 – HOPE</a></h3>
+          <p>Apa yang Saya Harapkan dari MK Basis Data</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="img/Database.jpg" alt="Post 2">
+        <div class="post-content">
+          <h3><a href="post2.html">Post 2 – Basis Data</a></h3>
+          <p> Apa itu Basis Data</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="img/Conceptual.jpg" alt="Post 3">
+        <div class="post-content">
+          <h3><a href="post3.html">Post 3 – Conceptual</a></h3>
+          <p>Apa itu Conceptual DB</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="img/Physical.jpg" alt="Post 4">
+        <div class="post-content">
+          <h3><a href="post4.html">Post 4 – Physical Model</a></h3>
+          <p>Apa itu Physical Model</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Basis Data | <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a></p>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
