@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apa yang Saya Harapkan dari MK Basis Data">
+  <title>Post 6 – Attribute, Entitas, Relasi dalam ERD</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <button class="burger" id="burgerMenu" aria-label="Menu">☰</button>
+    <div class="logo">Blog Pribadi</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="post1.html">Post 1</a></li>
+        <li><a href="post2.html">Post 2</a></li>
+        <li><a href="post3.html">Post 3</a></li>
+        <li><a href="post4.html">Post 4</a></li>
+        <li><a href="post5.html">Post 5</a></li>
+        <li><a href="post6.html" class="active">Post 6</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-theme" id="toggleTheme">🌙</button>
+  </header>
+
+  <!-- POST CONTENT -->
+  <section class="post-detail">
+    <h1>Apa itu Attribute, Entitas, Relasi dalam ERD?</h1>
+    <!-- Gambar post -->
+    <img src="img/post6.webp" alt="Ilustrasi Rak Buku" class="post-image">
+    <!-- Konten analogi -->
+     <h3>Pengertian ERD (Entity Relationship Diagram)</h3>
+    <p>ERD (Entity Relationship Diagram) adalah diagram yang menggambarkan struktur logika dari sebuah database — isinya ada:</p>
+    <p>-Entitas (Entity) → siapa/apa yang disimpan datanya</p>
+    <p>-Atribut (Attribute) → detail/informasi dari entitas</p>
+    <p>-Relasi (Relationship) → hubungan antar entitas</p>
+    <p>Bayangin ERD itu kayak peta relasi antar tabel database sebelum kamu bikin di MySQL.</p>
+    <h3>Entitas (Entity)</h3>
+    <p>Entitas adalah objek utama yang datanya ingin kamu simpan dalam database.</p>
+    <p>Contoh:</p>
+    <h4>Dalam sistem booking barbershop:</h4>
+    <p>-User → pelanggan yang booking</p>
+    <p>-Booking → data pemesanan</p>
+    <p>-Service → jenis layanan (Haircut, Treatment)</p>
+    <p>-Barber → tukang cukur</p>
+    <p>Analoginya:</p>
+    <p>-Entitas = tabel di database</p>
+    <h3>Jenis-jenis Atribut:</h3>
+    <p>-Key Attribute, Atribut unik yang jadi primary key</p>
+    <p>-Simple Attribute, Tidak bisa dipecah lagi  </p>
+    <p>-Composite Attribute, Bisa dipecah</p>
+    <p>-Derived Attribute, Bisa dihitung dari atribut lain</p>
+    <h3>Relasi (Relationship)</h3>
+    <p>Relasi adalah hubungan antar entitas dalam ERD.</p>
+    <p>Misalnya di sistem barbershop:</p>
+    <h4>1. User — Booking</h4>
+    <p>-Seorang user bisa melakukan banyak booking.</p>
+    <p>→ Relasinya: One to Many (1:N)</p>
+    <h4>2. Service — Booking</h4>
+    <p>-Satu service bisa muncul di banyak booking.</p>
+    <p>→ Relasinya: One to Many (1:N)</p>
+    <h4>3. Barber — Booking</h4>
+    <p>-Satu barber bisa melayani banyak booking.</p>
+    <p>→ Relasinya: One to Many (1:N)</p>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Basis Data | 
+      <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a>
+    </p>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
