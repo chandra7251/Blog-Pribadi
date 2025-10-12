@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apa yang Saya Harapkan dari MK Basis Data">
+  <title>Post 7 – Apa itu Primary Key, Foregent Key, Candidate Key</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <button class="burger" id="burgerMenu" aria-label="Menu">☰</button>
+    <div class="logo">Blog Pribadi</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="post1.html">Post 1</a></li>
+        <li><a href="post2.html">Post 2</a></li>
+        <li><a href="post3.html">Post 3</a></li>
+        <li><a href="post4.html">Post 4</a></li>
+        <li><a href="post5.html">Post 5</a></li>
+        <li><a href="post6.html">Post 6</a></li>
+        <li><a href="post6.html" class="active">Post 7</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-theme" id="toggleTheme">🌙</button>
+  </header>
+
+  <!-- POST CONTENT -->
+  <section class="post-detail">
+    <h1>Apa itu Primary Key, Foregent Key, Candidate Key?</h1>
+    <!-- Gambar post -->
+    <img src="img/post6.webp" alt="Ilustrasi Rak Buku" class="post-image">
+    <!-- Konten analogi -->
+    <h3>Primary Key (Kunci Utama)</h3>
+    <p>Primary Key adalah kolom unik yang digunakan untuk membedakan setiap baris data di sebuah tabel.</p>
+    <p>Satu tabel hanya boleh punya satu Primary Key, dan nilainya tidak boleh kosong (NULL).</p>
+    <h4>Fungsi utama:</h4>
+    <p>-Sebagai identitas unik untuk setiap record.</p>
+    <p>-Dipakai oleh tabel lain untuk membuat relasi (melalui Foreign Key).</p>
+    <p>-Menjaga integritas data agar tidak ada duplikasi.</p>
+    
+    <h3>Foreign Key (Kunci Tamu)</h3>
+    <p>Foreign Key adalah kolom yang digunakan untuk menghubungkan satu tabel dengan tabel lain.</p>
+    <p>Dia menyimpan nilai dari Primary Key tabel lain, sehingga hubungan antar data tetap konsisten.</p>
+    <h4>Fungsi utama:</h4>
+    <p>-Menjaga hubungan antar tabel.</p>
+    <p>-Mencegah data "yatim" (data di tabel anak tanpa induk yang valid).</p>
+    <p>-Menjamin integritas referensial.</p>
+    
+    <h3>Candidate Key (Kandidat Kunci Utama)</h3>
+    <p>Candidate Key adalah kolom (atau kombinasi kolom) yang berpotensi menjadi Primary Key, karena nilainya juga unik dan tidak boleh kosong.</p>
+    <p>Namun, hanya satu dari kandidat ini yang akhirnya dipilih menjadi Primary Key.</p>
+    <h4>Fungsi utama:</h4>
+    <p>-Menyediakan alternatif kunci unik lain.</p>
+    <p>-Berguna saat sistem berkembang dan butuh cara identifikasi lain tanpa mengubah struktur utama.</p>  
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Basis Data | 
+      <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a>
+    </p>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
