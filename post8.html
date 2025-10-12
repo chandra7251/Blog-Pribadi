@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=''>
+  <title>Post 8 – Apa Itu Relation pada ERD dan Kenapa Many-to-Many Tidak Baik Digunakan?</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <button class="burger" id="burgerMenu" aria-label="Menu">☰</button>
+    <div class="logo">Blog Pribadi</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="post1.html">Post 1</a></li>
+        <li><a href="post2.html">Post 2</a></li>
+        <li><a href="post3.html">Post 3</a></li>
+        <li><a href="post4.html">Post 4</a></li>
+        <li><a href="post5.html">Post 5</a></li>
+        <li><a href="post6.html">Post 6</a></li>
+        <li><a href="post7.html">Post 7</a></li>
+        <li><a href="post8.html" class="active">Post 8</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-theme" id="toggleTheme">🌙</button>
+  </header>
 
+  <!-- POST CONTENT -->
+  <section class="post-detail">
+    <h1>Apa Itu Relation pada ERD dan Kenapa Many-to-Many Tidak Baik Digunakan?</h1>
+    <!-- Gambar post -->
+    <img src="img/post6.webp" alt="Ilustrasi" class="post-image">
+    <!-- Konten analogi -->
+     <h3>Apa Itu Relation?</h3>
+    <p>Relation adalah hubungan logis antara dua entitas (tabel) yang menunjukkan bagaimana data saling berinteraksi.</p>
+    <p>Hubungan ini ditentukan berdasarkan kunci: biasanya Primary Key dari satu tabel terhubung ke Foreign Key di tabel lain.</p>
+    <h4>Ada tiga jenis relasi utama dalam ERD:</h4>
+    <p>- One-to-One (1:1)</p>
+    <p>Satu entitas berhubungan dengan satu entitas lain secara eksklusif.</p>
+    <p>Relasi ini jarang dipakai kecuali data memang harus dipisah demi keamanan (misalnya data login terpisah dari data pribadi).</p>
+    <p>- One-to-Many (1:N)</p>
+    <p>Satu entitas bisa berhubungan dengan banyak entitas lain.</p>
+    <p>Ini tipe relasi paling umum di dunia nyata.</p>
+    <p>- Many-to-Many (M:N)</p>
+    <p>Satu entitas bisa berhubungan dengan banyak entitas lain, dan sebaliknya.</p>
+    <h4>Kenapa Many-to-Many Tidak Baik Digunakan Langsung di ERD?</h4>
+    <ul>
+        <li>Database Relasional Tidak Bisa Menyimpan Relasi M:N Secara Langsung</li>
+        <p>Dalam sistem seperti MySQL, setiap baris data hanya bisa menunjuk ke satu nilai Foreign Key.</p>
+        <p>Kalau dua tabel saling menunjuk banyak nilai sekaligus, datanya akan tidak konsisten dan sulit di-query.</p>
+        <li>Sulit Menjaga Integritas dan Performa</li>
+        <p>Kamu tidak bisa menambah informasi tambahan (misalnya jumlah barang per transaksi).</p>
+        <p>Query pencarian akan jadi lambat dan membingungkan.</p>
+    </ul>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Basis Data | 
+      <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a>
+    </p>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
