@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=''>
+  <title>Post 9 – Apa Itu Normalisasi Pada ERD</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <button class="burger" id="burgerMenu" aria-label="Menu">☰</button>
+    <div class="logo">Blog Pribadi</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="post1.html">Post 1</a></li>
+        <li><a href="post2.html">Post 2</a></li>
+        <li><a href="post3.html">Post 3</a></li>
+        <li><a href="post4.html">Post 4</a></li>
+        <li><a href="post5.html">Post 5</a></li>
+        <li><a href="post6.html">Post 6</a></li>
+        <li><a href="post7.html">Post 7</a></li>
+        <li><a href="post8.html">Post 8</a></li>
+        <li><a href="post9.html" class="active">Post 9</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-theme" id="toggleTheme">🌙</button>
+  </header>
+
+  <!-- POST CONTENT -->
+  <section class="post-detail">
+    <h1>Apa Itu Normalisasi Pada ERD</h1>
+    <!-- Gambar post -->
+    <img src="img/post6.webp" alt="Ilustrasi" class="post-image">
+    <!-- Konten analogi -->
+     <h3>Apa Itu Normalisasi Pada ERD</h3>
+    <p>Normalisasi pada Entity Relationship Diagram (ERD) merupakan suatu proses sistematis untuk mengorganisasi struktur data dalam basis data agar menjadi lebih efisien, konsisten, dan bebas dari duplikasi. Tujuan utama dari normalisasi adalah mengurangi redundansi data serta meningkatkan integritas data, sehingga setiap informasi disimpan hanya pada satu tempat yang tepat.</p>
+    <p>Dalam konteks ERD, normalisasi dilakukan dengan cara memecah entitas yang memiliki atribut ganda, berulang, atau tidak terstruktur dengan baik menjadi beberapa entitas yang lebih kecil dan saling berhubungan melalui primary key dan foreign key. Dengan demikian, hubungan antar data menjadi lebih logis dan mudah dipelihara.</p>
+    <h4>⚙️ Tahapan Normalisasi</h4>
+    <p>- First Normal Form (1NF)</p>
+    <p>Pada tahap ini, setiap atribut dalam tabel harus memiliki nilai yang atomik (tidak dapat dipecah lagi). Artinya, tidak boleh ada kolom yang berisi daftar nilai atau data yang berulang dalam satu baris.</p>
+    <p>- Second Normal Form (2NF)</p>
+    <p>Suatu tabel dikatakan memenuhi 2NF apabila sudah memenuhi 1NF dan setiap atribut non-kunci bergantung sepenuhnya pada primary key, bukan hanya sebagian dari kunci gabungan. Tujuannya untuk menghindari ketergantungan parsial.</p>
+    <p>- Third Normal Form (3NF)</p>
+    <p>Tabel memenuhi 3NF jika telah memenuhi 2NF dan tidak terdapat ketergantungan transitif, yaitu ketika atribut non-kunci bergantung pada atribut non-kunci lainnya. Dengan memisahkan atribut tersebut ke tabel tersendiri, data menjadi lebih efisien dan mudah diperbarui.</p>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Basis Data | 
+      <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a>
+    </p>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
